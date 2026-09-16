@@ -1,6 +1,6 @@
 node_modules/
 dist/
-
+dist2/
 *.log
 .npm-cache/
 .git-tmp/
