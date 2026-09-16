@@ -28,6 +28,7 @@
       left: 0; top: 0;
       width: 100%; height: 100%;
       pointer-events: none;           /* 默认不拦截，仅在 pet-body 上开启 */
+      /* transform: ; */
     }
 
     /* 宠物"身体"：实际展示与点击区域。
@@ -256,6 +257,13 @@
       petBody.style.bottom = (BASE_BOTTOM + dy) + "px";
       requestAnimationFrame(floatLoop);
     })();
+
+
+      let arr = [1, 2, 3, 4, 5, 2, 3, 4, 7, 8];
+      // 方式一：reduce + includes（保持你想用的写法，修正 acc.includes）
+      const arr2 = arr.reduce((acc, cur) => acc.includes(cur) ? acc : [...acc, cur], []);
+      console.log("去重结果:", arr2);  // 输出: [1, 2, 3, 4, 5, 7, 8]
   </script>
+  
 </body>
 </html>
